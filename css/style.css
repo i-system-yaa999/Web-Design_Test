@@ -1,0 +1,214 @@
+:root{
+  --g_green:#55BBBB;
+  --g_pink:#ff4384;
+  --g_gfont_shippori: 'Shippori Mincho', serif;
+  --g_gfont_amatic: 'Amatic SC', cursive;
+}
+body{
+  font-family: var(--g_gfont_shippori);
+}
+
+img{
+  width: 100%;
+}
+.green{
+  color: var(--g_green);
+}
+.pink{
+  color: var(--g_pink);
+}
+.amatic_font{
+  font-family: var(--g_gfont_amatic);
+}
+
+.frame{
+  max-width: 1300px;
+  width: 1000px;
+  margin: 0 auto;
+}
+.header{
+  line-height: 70px;
+  text-align: right;
+}
+.header h1{
+  font-size: 30px;
+  color: var(--g_green);
+  margin-right: 10px;
+}
+
+.first-view{
+  position: relative;
+}
+.first-view img{
+}
+.first-view .container{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.first-view h2{
+  font-size: 30px;
+  line-height: 80px;
+}
+.first-view h2 .bigfont{
+  font-size: 54px;
+}
+
+.campaign {
+  margin: 20px 0 0 20px;
+}
+.campaign .outer{
+  display: flex;
+}
+.campaign .circle{
+  width: 75px;
+  height: 75px;
+  background: var(--g_pink);
+  border-radius: 50%;
+
+  font-size: 16px;
+  color:white;
+  line-height: 75px;
+  text-align: center;
+}
+.campaign .inner{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px 0px 20px;
+}
+.campaign .green{
+  font-size: 14px;
+}
+.campaign .pink{
+  margin: 10px 0px 0px 0px;
+  font-size: 22px;
+}
+.campaign .pink span{
+  font-size: 34px;
+  font-weight: bold;
+}
+.campaign .link{
+  width: 350px;
+  height: 60px;
+  background: var(--g_pink);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+  margin: 30px 0;
+  box-shadow: 0 0 10px var(--g_pink);
+}
+.campaign .link a{
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.second-view .title{
+  width: 100%;
+  height: 80px;
+  background: var(--g_green);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 80px;
+}
+.second-view .title span{
+  font-size: 35px;
+}
+.second-view .triangle{
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid var(--g_green);
+}
+
+.second-view .container{
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+}
+.second-view .outer{
+  display: flex;
+}
+.second-view img{
+  width: 180px;
+}
+.second-view .inner{
+  margin: 20px 0 0 20px;
+}
+
+.second-view .inner ul{
+  border:1px solid var(--g_green);
+  border-radius: 10px;
+  list-style: none;
+  padding: 20px 20px 30px 20px;
+}
+.second-view .inner li{
+  border-bottom: 1px solid var(--g_green);
+  padding: 10px;
+  font-size: 20px;
+}
+.second-view .inner li::before{
+  content: url(../img/check.svg);
+}
+.second-view .under{
+  width: 100%;
+  background:var(--g_green);
+  text-align: center;
+  padding: 30px 0;
+}
+.second-view .under p{
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+}
+.second-view .under .bigfont{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.third-view{}
+.third-view .container{
+  width: 800px;
+  margin: 30px auto;
+  display: flex;
+}
+.third-view .points{
+  border:1px solid var(--g_green);
+  margin: 7px;
+  position: relative;
+  padding: 10px;
+}
+.third-view .points .point{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%) translateX(10px);
+  padding: 0 2px;
+  background-color: white;
+  font-size: 25px;
+}
+.third-view .points .bigfont{
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 35px;
+}
+.third-view .points .bigfont:first-of-type{
+  margin-top: 25px;
+}
+.third-view .points .smallfont{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.footer{
+  text-align: center;
+  margin: 20px;
+  padding: 30px;
+}
+.footer small{
+  font-size: 12px;
+}
